@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="RockwellStd.otf">
+            <string>RockwellStd</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="places" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +22,53 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bitmap" translatesAutoresizingMaskIntoConstraints="NO" id="Z74-CB-2me">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Delhi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2u-ve-7OS">
+                                <rect key="frame" x="20" y="242" width="560" height="56"/>
+                                <fontDescription key="fontDescription" name="RockwellStd" family="Rockwell Std" pointSize="56"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Stepped in History and Culture New Delhi is a foodie’s delight" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeV-xt-T9g">
+                                <rect key="frame" x="45" y="308" width="511" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="5Fa-Hu-IfM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIP-0D-vRH">
+                                <rect key="frame" x="45" y="550" width="511" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z74-CB-2me" secondAttribute="bottom" id="1ul-FY-5o3"/>
+                            <constraint firstItem="TeV-xt-T9g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8UN-4t-0Er"/>
+                            <constraint firstItem="TeV-xt-T9g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="9oE-GH-YC6"/>
+                            <constraint firstAttribute="trailing" secondItem="Z74-CB-2me" secondAttribute="trailing" id="KeY-TN-fLe"/>
+                            <constraint firstItem="Z74-CB-2me" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="N1e-wC-Rfp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TeV-xt-T9g" secondAttribute="trailing" constant="60" id="Yjf-rP-8ak"/>
+                            <constraint firstItem="b2u-ve-7OS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ZlD-Ro-eGa"/>
+                            <constraint firstItem="Z74-CB-2me" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="deE-Xz-SiZ"/>
+                            <constraint firstItem="TeV-xt-T9g" firstAttribute="top" secondItem="b2u-ve-7OS" secondAttribute="bottom" constant="10" id="lQB-WQ-DWb"/>
+                            <constraint firstItem="b2u-ve-7OS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lnH-X1-RQK"/>
+                            <constraint firstItem="b2u-ve-7OS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="xE2-4u-xKS"/>
+                            <constraint firstItem="b2u-ve-7OS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xI1-nt-nPC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bitmap" width="734" height="549"/>
+    </resources>
 </document>

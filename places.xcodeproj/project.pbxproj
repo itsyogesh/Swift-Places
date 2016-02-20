@@ -12,6 +12,7 @@
 		EC42FE851C7807BA0044DBDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC42FE831C7807BA0044DBDF /* Main.storyboard */; };
 		EC42FE871C7807BA0044DBDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC42FE861C7807BA0044DBDF /* Assets.xcassets */; };
 		EC42FE8A1C7807BA0044DBDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC42FE881C7807BA0044DBDF /* LaunchScreen.storyboard */; };
+		EC42FE931C78BE620044DBDF /* RockwellStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = EC42FE921C78BE620044DBDF /* RockwellStd.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EC42FE861C7807BA0044DBDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC42FE891C7807BA0044DBDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC42FE8B1C7807BA0044DBDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC42FE921C78BE620044DBDF /* RockwellStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RockwellStd.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		EC42FE7E1C7807BA0044DBDF /* places */ = {
 			isa = PBXGroup;
 			children = (
+				EC42FE911C78BE4C0044DBDF /* Resources */,
 				EC42FE7F1C7807BA0044DBDF /* AppDelegate.swift */,
 				EC42FE811C7807BA0044DBDF /* ViewController.swift */,
 				EC42FE831C7807BA0044DBDF /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				EC42FE8B1C7807BA0044DBDF /* Info.plist */,
 			);
 			path = places;
+			sourceTree = "<group>";
+		};
+		EC42FE911C78BE4C0044DBDF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC42FE921C78BE620044DBDF /* RockwellStd.otf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC42FE931C78BE620044DBDF /* RockwellStd.otf in Resources */,
 				EC42FE8A1C7807BA0044DBDF /* LaunchScreen.storyboard in Resources */,
 				EC42FE871C7807BA0044DBDF /* Assets.xcassets in Resources */,
 				EC42FE851C7807BA0044DBDF /* Main.storyboard in Resources */,
