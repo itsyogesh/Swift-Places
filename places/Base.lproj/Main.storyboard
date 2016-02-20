@@ -26,46 +26,86 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bitmap" translatesAutoresizingMaskIntoConstraints="NO" id="Z74-CB-2me">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Delhi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2u-ve-7OS">
-                                <rect key="frame" x="20" y="242" width="560" height="56"/>
-                                <fontDescription key="fontDescription" name="RockwellStd" family="Rockwell Std" pointSize="56"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Stepped in History and Culture New Delhi is a foodie’s delight" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeV-xt-T9g">
-                                <rect key="frame" x="45" y="308" width="511" height="100"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d46-cr-CB8">
+                                <rect key="frame" x="45" y="244" width="510" height="112"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Delhi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2u-ve-7OS">
+                                        <rect key="frame" x="122" y="0.0" width="267" height="56"/>
+                                        <fontDescription key="fontDescription" name="RockwellStd" family="Rockwell Std" pointSize="56"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stepped in History and Culture New Delhi is a foodie’s delight" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeV-xt-T9g">
+                                        <rect key="frame" x="28" y="56" width="455" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="5Fa-Hu-IfM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="5Fa-Hu-IfM"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIP-0D-vRH">
+                                <rect key="frame" x="45" y="530" width="510" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="5Fa-Hu-IfM"/>
+                                    <constraint firstAttribute="height" constant="50" id="TOu-s0-hOr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIP-0D-vRH">
-                                <rect key="frame" x="45" y="550" width="511" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="17"/>
+                                <state key="normal" title="VIEW GUIDE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="u7L-lx-Pxz" kind="show" id="PzA-Cj-E3H"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z74-CB-2me" secondAttribute="bottom" id="1ul-FY-5o3"/>
-                            <constraint firstItem="TeV-xt-T9g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8UN-4t-0Er"/>
-                            <constraint firstItem="TeV-xt-T9g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="9oE-GH-YC6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d46-cr-CB8" secondAttribute="trailing" constant="25" id="33h-ef-V0D"/>
+                            <constraint firstItem="iIP-0D-vRH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="45" id="8KZ-OA-xPI"/>
+                            <constraint firstItem="d46-cr-CB8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="Arq-4A-YvN"/>
+                            <constraint firstItem="iIP-0D-vRH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J4g-Ws-km8"/>
                             <constraint firstAttribute="trailing" secondItem="Z74-CB-2me" secondAttribute="trailing" id="KeY-TN-fLe"/>
+                            <constraint firstItem="d46-cr-CB8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Kr3-P9-6Sr"/>
                             <constraint firstItem="Z74-CB-2me" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="N1e-wC-Rfp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TeV-xt-T9g" secondAttribute="trailing" constant="60" id="Yjf-rP-8ak"/>
-                            <constraint firstItem="b2u-ve-7OS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ZlD-Ro-eGa"/>
+                            <constraint firstAttribute="trailing" secondItem="iIP-0D-vRH" secondAttribute="trailing" constant="45" id="TSt-qo-XRl"/>
                             <constraint firstItem="Z74-CB-2me" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="deE-Xz-SiZ"/>
-                            <constraint firstItem="TeV-xt-T9g" firstAttribute="top" secondItem="b2u-ve-7OS" secondAttribute="bottom" constant="10" id="lQB-WQ-DWb"/>
-                            <constraint firstItem="b2u-ve-7OS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lnH-X1-RQK"/>
-                            <constraint firstItem="b2u-ve-7OS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="xE2-4u-xKS"/>
-                            <constraint firstItem="b2u-ve-7OS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xI1-nt-nPC"/>
+                            <constraint firstItem="d46-cr-CB8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="htA-Sk-oEr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iIP-0D-vRH" secondAttribute="bottom" constant="20" id="rM0-Tt-Ake"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="guideBtn" destination="iIP-0D-vRH" id="txl-Uw-4nJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="337"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Lwg-cc-zCS">
+            <objects>
+                <viewController id="u7L-lx-Pxz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oEG-Hd-UVP"/>
+                        <viewControllerLayoutGuide type="bottom" id="DJ6-KF-VAm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jlU-hw-5Mj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mst-2t-Ctg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1175" y="337"/>
         </scene>
     </scenes>
     <resources>
