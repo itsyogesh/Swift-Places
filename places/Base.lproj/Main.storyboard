@@ -103,33 +103,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bitmap" translatesAutoresizingMaskIntoConstraints="NO" id="Dos-X8-tG3">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="2P1-KC-BIb"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="DQr-Ts-1x6"/>
-                                    <constraint firstAttribute="height" constant="300" id="E1A-pX-jKL">
-                                        <variation key="heightClass=compact" constant="150"/>
+                                    <constraint firstAttribute="height" constant="150" identifier="id123" id="E1A-pX-jKL">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="150"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="300"/>
                                     </constraint>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="EFW-SD-G27"/>
-                                    <constraint firstAttribute="width" constant="600" id="oT6-eB-T5i"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="2P1-KC-BIb"/>
-                                        <exclude reference="DQr-Ts-1x6"/>
-                                        <exclude reference="EFW-SD-G27"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact">
-                                    <mask key="constraints">
-                                        <exclude reference="2P1-KC-BIb"/>
-                                        <exclude reference="DQr-Ts-1x6"/>
-                                        <exclude reference="EFW-SD-G27"/>
-                                    </mask>
-                                </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Delhi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niw-bf-bYS">
-                                <rect key="frame" x="167" y="122" width="267" height="56"/>
+                                <rect key="frame" x="167" y="47" width="267" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="XRZ-8t-YWS"/>
                                     <constraint firstAttribute="width" constant="267" id="af1-sC-OvB"/>
@@ -151,12 +134,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Dos-X8-tG3" firstAttribute="top" secondItem="jlU-hw-5Mj" secondAttribute="top" id="0wM-0T-w5p"/>
+                            <constraint firstItem="Dos-X8-tG3" firstAttribute="top" secondItem="jlU-hw-5Mj" secondAttribute="top" identifier="id127" id="0wM-0T-w5p"/>
                             <constraint firstItem="wkX-B6-xTC" firstAttribute="leading" secondItem="jlU-hw-5Mj" secondAttribute="leadingMargin" id="PfP-04-uOa"/>
-                            <constraint firstItem="niw-bf-bYS" firstAttribute="centerY" secondItem="Dos-X8-tG3" secondAttribute="centerY" id="YoF-jb-dj2"/>
                             <constraint firstItem="niw-bf-bYS" firstAttribute="centerX" secondItem="jlU-hw-5Mj" secondAttribute="centerX" id="dDu-Al-834"/>
-                            <constraint firstItem="Dos-X8-tG3" firstAttribute="leading" secondItem="jlU-hw-5Mj" secondAttribute="leading" id="gEf-q0-Lv4"/>
-                            <constraint firstAttribute="trailing" secondItem="Dos-X8-tG3" secondAttribute="trailing" id="nGZ-1Z-UAb"/>
+                            <constraint firstItem="Dos-X8-tG3" firstAttribute="leading" secondItem="jlU-hw-5Mj" secondAttribute="leading" identifier="id125" id="gEf-q0-Lv4"/>
+                            <constraint firstAttribute="trailing" secondItem="Dos-X8-tG3" secondAttribute="trailing" identifier="id124" id="nGZ-1Z-UAb"/>
+                            <constraint firstItem="niw-bf-bYS" firstAttribute="centerY" secondItem="Dos-X8-tG3" secondAttribute="centerY" id="rRf-Am-7ZT"/>
                             <constraint firstItem="wkX-B6-xTC" firstAttribute="top" secondItem="jlU-hw-5Mj" secondAttribute="topMargin" constant="8" id="y2y-gn-y51"/>
                         </constraints>
                     </view>

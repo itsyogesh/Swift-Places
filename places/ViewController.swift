@@ -26,7 +26,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-
 }
+
+extension NSLayoutConstraint {
+    override public var description: String {
+        let id = identifier ?? ""
+        return "id: \(id), constant: \(constant)" //you may print whatever you want here
+    }
+}
+
 
